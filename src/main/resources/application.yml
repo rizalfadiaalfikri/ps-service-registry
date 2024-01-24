@@ -5,9 +5,9 @@ spring:
     name: registry-service
 eureka:
   instance:
-    hostname: localhost
+    hostname: ps-service-registry-production.up.railway.app
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      default-zone: https://${eureka.instance.hostname}:${server.port}/eureka/
